@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+build/
+
+# misc
+.DS_Store
+.env
+.env-*
+.idea
+*.log
+.history/

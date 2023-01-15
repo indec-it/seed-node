@@ -1,0 +1,31 @@
+{
+  "verbose": true,
+  "clearMocks": true,
+  "testEnvironment": "node",
+  "moduleFileExtensions": [
+    "js",
+    "json"
+  ],
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+  ],
+  "transformIgnorePatterns": [
+    "node_modules/"
+  ],
+  "moduleNameMapper": {
+    "^@root(.*)$": "<rootDir>$1",
+    "^@controllers(.*)$": "<rootDir>/src/controllers$1",
+    "^@models(.*)$": "<rootDir>/src/models$1",
+    "^@schemas(.*)$": "<rootDir>/src/schemas$1",
+    "^@services(.*)$": "<rootDir>/src/services$1"
+  },
+  "setupFiles": [
+    "<rootDir>/jest.setup.js",
+    "<rootDir>/test/index.js"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ]
+}

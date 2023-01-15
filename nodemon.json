@@ -1,0 +1,15 @@
+{
+  "nodemonConfig": {
+    "ignore": [
+      "test/**/*.js",
+      "seeds/**/*.js",
+      "node_modules/**/node_modules"
+    ],
+    "watch": ["src"]
+  },
+  "restartable": "rs",
+  "delay": 3500,
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
