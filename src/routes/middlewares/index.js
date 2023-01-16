@@ -1,6 +1,5 @@
-const authenticate = require('./authenticate');
-const errorHandler = require('./errorHandler');
-const permission = require('./permission');
-const validateAppStatus = require('./validateAppStatus');
+const fs = require('fs');
 
-module.exports = {authenticate, errorHandler, permission, validateAppStatus};
+const exportFiles = include('helpers/exportFiles');
+
+module.exports = exportFiles(fs.readdirSync(__dirname), __dirname);

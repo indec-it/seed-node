@@ -1,9 +1,5 @@
-const Error = require('./Error');
-const User = require('./User');
-const ValidateToken = require('./ValidateToken');
+const fs = require('fs');
 
-module.exports = {
-    Error,
-    User,
-    ValidateToken
-};
+const exportFiles = include('helpers/exportFiles');
+
+module.exports = exportFiles(fs.readdirSync(__dirname), __dirname);
